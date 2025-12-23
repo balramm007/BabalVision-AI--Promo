@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabalVision AI | Next-Gen Generative Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER with MEGA MENUS -->
+    <header class="main-header">
+        <div class="header-left">
+            <!-- Brand Logo with Scroll to Top functionality -->
+            <div class="brand-dropdown" id="brandBtn">BabalVision AI</div>
+            <nav class="header-nav">
+                
+                <!-- Models Dropdown -->
+                <div class="nav-item-wrapper">
+                    <span class="nav-text">Models</span>
+                    <div class="dropdown-menu list-style">
+                        <div class="dropdown-content">
+                            <a href="https://babalvision-ai.balrampathak.com.np/" class="dd-item">BabalVision AI</a>
+                            <a href="https://ai.balrampathak.com.np/" class="dd-item">Balram AI</a>
+                            <a href="https://gen3d.balrampathak.com.np/" class="dd-item">Gen3D</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Dropdown -->
+                <div class="nav-item-wrapper">
+                    <span class="nav-text">Research</span>
+                    <div class="dropdown-menu wide-style">
+                        <div class="dropdown-content grid-2-menu">
+                            <div class="col">
+                                <h4>Breakthroughs</h4>
+                                <p>Explore some of the biggest innovations in AI underpinning the modern industry.</p>
+                                <ul class="menu-list">
+                                    <li>Genie 3</li>
+                                    <li>AlphaGo</li>
+                                    <li>AlphaZero</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Publications</h4>
+                                <p>Explore a selection of our recent research on complex challenges in AI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Science Dropdown -->
+                <div class="nav-item-wrapper">
+                    <span class="nav-text">Science</span>
+                    <div class="dropdown-menu full-style">
+                        <div class="dropdown-content grid-4-menu">
+                            <div class="col">
+                                <h4>AI for biology</h4>
+                                <ul>
+                                    <li>AlphaFold</li>
+                                    <li>AlphaGenome</li>
+                                    <li>AlphaMissense</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>AI for climate</h4>
+                                <ul>
+                                    <li>AlphaEarth</li>
+                                    <li>WeatherNext</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>AI for physics</h4>
+                                <ul>
+                                    <li>GNoME</li>
+                                    <li>Fusion</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>AI for math</h4>
+                                <ul>
+                                    <li>AlphaEvolve</li>
+                                    <li>AlphaProof</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Dropdown -->
+                <div class="nav-item-wrapper">
+                    <span class="nav-text">About</span>
+                    <div class="dropdown-menu simple-style">
+                        <div class="dropdown-content">
+                            <h4>Our mission is to build AI responsibly to benefit humanity.</h4>
+                            <div class="grid-2-menu" style="margin-top:20px;">
+                                <div>
+                                    <h5>Responsibility</h5>
+                                    <p>Ensuring AI safety through proactive security.</p>
+                                </div>
+                                <div>
+                                    <h5>Careers</h5>
+                                    <p>We're looking for people who want to make a real impact.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="https://babalvision-ai.balrampathak.com.np/" class="icon-link"><span>&lt;&gt;</span> Build with BabalVision AI</a>
+            <a href="https://ai.balrampathak.com.np/" class="icon-link">
+                <img src="logo.png" class="tiny-logo" alt="logo"> 
+                Chat with Balram AI
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SLIDER -->
+    <section class="hero-section" id="heroStart">
+        <div class="hero-container">
+            <div class="hero-track" id="heroTrack">
+                <!-- Javascript will inject slides here -->
+            </div>
+        </div>
+
+        <!-- NEW PILL NAVIGATION ARROWS -->
+        <div class="slider-nav-pill">
+            <button class="nav-arrow" id="prevBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="nav-arrow" id="nextBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- INTRO STATEMENT -->
+    <section class="intro-statement">
+        <div class="container">
+            <h2>Photorealistic images, sharper clarity, improved spelling and typography. Bring your imagination to life faster than ever before.</h2>
+        </div>
+    </section>
+
+    <!-- BIG STICKY NAV -->
+    <div class="sticky-nav-container">
+        <div class="nav-track">
+            <div class="nav-backdrop"></div>
+            <a href="#capabilities" class="nav-item active" data-target="capabilities">Capabilities</a>
+            <a href="#performance" class="nav-item" data-target="performance">Performance</a>
+            <a href="#safety" class="nav-item" data-target="safety">Safety</a>
+            <a href="#try" class="nav-item" data-target="try">Try BabalVision AI</a>
+        </div>
+    </div>
+
+    <!-- 1. CAPABILITIES SECTION -->
+    <section id="capabilities" class="section-padding scroll-target">
+        <div class="container">
+            <div class="text-block">
+                <h2>Capabilities</h2>
+                <p class="large-p">The latest iteration of BabalVision AI brings marked<br>improvements to its capabilities.</p>
+            </div>
+
+            <div class="grid-3-cards">
+                <div class="square-card">
+                    <div class="fixed-icon-box">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                    </div>
+                </div>
+                <div class="square-card">
+                    <div class="fixed-icon-box">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                    </div>
+                </div>
+                <div class="square-card">
+                    <div class="card-text-icon">2K</div>
+                </div>
+            </div>
+
+            <div class="grid-3-text">
+                <div>
+                    <h3>Ultra-fast option</h3>
+                    <p class="desc">Test dozens of ideas instantly. BabalVision AI comes with a mode that’s up to 10x faster than our previous model.</p>
+                </div>
+                <div>
+                    <h3>Realize your vision</h3>
+                    <p class="desc">Push the limits of creativity further than ever before with enhanced colors, styles, details and text rendering.</p>
+                </div>
+                <div>
+                    <h3>Exceptional clarity</h3>
+                    <p class="desc">BabalVision AI is optimized for creativity, generating images with up to 2k resolution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. PHOTO-REALISTIC SLIDER -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-block">
+                <h2>Photo-realistic</h2>
+                <p class="large-p">Create realistic images of landscapes, plants,<br>people and animals with true-to-life details.</p>
+            </div>
+        </div>
+        
+        <div class="slider-wrapper drag-scroll">
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/a6y3Gfsn8FBXqPU9fRekSgR8mbpLb2AlQphcB8RV17rXbps5PyTUIZk7H5MCJKZ7zV4kNM8ntBVpXgA4BBLm1zhYD2dhpHGQ0RAV86Sr8vw=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Produce a stunning, award-winning close-up of a chameleon blending into vivid green foliage.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/_qzQ7sVpBjTP_gnq9h81-gIqFXdVIZkLkSlWggXuWtHrXgxUzXeuUfr44A364I1BxgQe3n3tnp3E1y-LpV7EVDpZaTwH-Q_Fj-eRsOGg=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Cinematic portrait with nostalgic lighting, capturing raw emotion on a city street.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/jK8OldI6JtrmUbSbcE2abZenMySgBylbQMrK4kVxzALBTxgUC2JU-WHSb_ZZgZBSu4DCMggeFUbLagZbS7J9CQyf3vIvdS4NRW3ckaLg=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Framed in a sophisticated medium shot, the white-throated kingfisher diving.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/JJlBnV4YG1s3hg0fRpFNgfJC_lCsYRMGNc97jc6SPIPmMJvlH9DLf7lI4z5WZUA1SLFnHLpxGk1JuL9wuyZHi-cKwktUpYCOgMpPGWB48w=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: A young woman with red hair standing in front of a blue background, wearing a blue jersey.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://cdn.pixabay.com/photo/2023/05/26/23/04/ai-generated-8020437_1280.png">
+                <div class="prompt-box">Prompt: Wide angle shot of a misty mountain range at sunrise, photorealistic 8k render.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. FINE DETAILS SLIDER -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-block">
+                <h2>Fine details</h2>
+                <p class="large-p">Capture extreme close-ups with richer colors, textures<br>and gradients — for images that look like they can be touched.</p>
+            </div>
+        </div>
+        
+        <div class="slider-wrapper drag-scroll">
+            <div class="slide-card">
+                <img src="https://cdn.prod.website-files.com/673728fe79d73c09073776cb/68c1b86c7f6a34373d79038c_imagen-1.webp">
+                <div class="prompt-box">Prompt: Extreme macro photograph capturing the breathtaking iridescence of a butterfly wing.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/035/374/084/small_2x/ai-generated-eagle-with-keen-gaze-wild-bird-on-green-background-closeup-of-bald-eagle-intense-gaze-showcasing-its-sharp-beady-eyes-and-distinctive-plumage-portrait-of-wildlife-magnificence-photo.jpeg">
+                <div class="prompt-box">Prompt: Close up of antique gold jewelry with intricate filigree and embedded gems.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/2UrzW5p27zKLL40apKji8gU6RfSKBtxR5SLjMMKzirJ6JpueQvKyGRLdwSmhPXB0_rszcrQJ1vOk4-5oCYDh4h7ogFGXGOf9vfTRUuAD0Ns=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Macro texture of a peacock feather, showing the metallic sheen and strands.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/eraaWseBN90pkQSy0Y-W-AcyWSoe2vnJCtLnnACw5_o-10n5DHfWhaSiKvr6Q9PdI5nboCCVej788rk4P8llS7UtDSoziqFbjGrDF5qAMg=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Water droplets on a spider web, reflecting the forest behind it in high detail.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/mv9bN6picM2_JHVhUS6CZKLiBuoNBBlDc4kBV39zeZzHahAYBm2JAP5aFKdjo1afmXHaLp7qW1hra0jg5Db7GO1mFnwdIWwDAvtVa44zTA=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: The rugged texture of an old elephant's skin, black and white photography.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. DIVERSE ART STYLES -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-block">
+                <h2>Diverse art styles</h2>
+                <p class="large-p">BabalVision AI can render diverse art styles with greater<br>accuracy — from photo realism and impressionism to<br>abstract and illustration.</p>
+            </div>
+        </div>
+        <div class="slider-wrapper drag-scroll">
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/KWpRbFe43N01tr0ug-xbhL8Iixx7zhnRtJrX2uXpNqPLhX_rdJIQGdy89nM_Uo3Pur8tzagOXhZIJyh39puflJQLzK2qsxGlP1-29xYs_LdmmCafFw=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Three figures in oversized, clashing-pattern suits on a vivid coral background, flat high-saturation colors, crisp black outlines, stylized faces, playful confident mood, graphic fashion-poster style.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/f9uVsB2c6wgpKvs-t5poFhSLR9Yta3Lde064zC1gkPDdn_Z2mCxpPdEMGfu2svwZpl3g2TD9UbP8jb_MltRvaXw0cZk8-KdBtEBMALah_w=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Whimsical rolling green hills under a soft pink sky, one hill shaped like a sleeping giant, textured pastel-style colors, gentle folklore mood, small houses and trees for scale, soft diffused light.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/SQDe7ywzHQ7MCLc_83gqPCXQx0xxK7QG9fi08QsjsYRu-L742s57BijwinQKUHaZnnNoHywR3U7ECTSrllj1HiixR_t5Y9h0mW3jHvrtwF9jz71z-Q=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Winding coastal path over a churning sea, thick textured brushstrokes, rugged and windswept mood, dramatic late-afternoon light, rich natural colors, dynamic composition emphasizing raw energy.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/04lAMEbhzs1caXj0FjLJhiSq2kryC6d2Cbe3MGZdKJxfFuwALZZ8091QvwhDFrF44kCLrRCVcMYVvFyfbQpeXAuMjPs7r0YhEDXK-9zj4bw=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Vintage botanical watercolor of a raspberry branch with green leaves, soft layered colors, delicate fine details, gentle natural light, textured off-white paper, elegant and naturalistic mood.</div>
+            </div>
+            <div class="slide-card">
+                <img src="https://lh3.googleusercontent.com/n3QEqzns4xaDTZhsIYBWx_hWtJsP3HK-eu0Q2McG147ikYv6wA-HQ3Mw5P1Bs0k4URPfhZat1GaMOqKPhVmYd0o3d6pkJSazTp_KqS9pI2I=w2880-h1620-n-nu-rw-lo">
+                <div class="prompt-box">Prompt: Wooden cabin by a calm lake among tall pines, blocky painterly strokes, textured reflections, serene isolation, late-afternoon light, vivid natural colors.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. STICKERS -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-block">
+                <h2>See what else BabalVision AI can do</h2>
+                <p class="sub-header-gray">Stickers and logos</p>
+            </div>
+        </div>
+        <div class="slider-wrapper drag-scroll">
+            <div class="slide-card white-bg">
+                <div class="sticker-container">
+                    <img src="https://lh3.googleusercontent.com/L22VnqqqOLEsEUIeXlMG9mAEKJURjuiKi7Ofta7a_qYqk6zeG5lSodFxHpJOTgts976yoJNHHJoWY-hPWUhpwkezqccON64isRZTPFE9=w2880-h1620-n-nu-rw-lo" class="sticker-img">
+                </div>
+                <div class="prompt-box light">Prompt: Die-cut sticker of a polite goose holding a breadstick, warm painterly digital style, soft brushstrokes, natural tones, soft lighting, isolated on white, wholesome humorous vibe.</div>
+            </div>
+            <div class="slide-card white-bg">
+                <div class="sticker-container">
+                    <img src="https://lh3.googleusercontent.com/IE53wJ13hCmd-7n8sUKanZ4i4HZnRhXlmTs62FmylCtNoiVfaH16DgSzT6Hxl9hjlxSmSpypohaYe2hSNWhDd2NldcT-HvGspAa-Tt9j1j0=w2880-h1620-n-nu-rw-lo" class="sticker-img">
+                </div>
+                <div class="prompt-box light">Prompt: Minimalist sticker of an astronaut floating with a slice of pepperoni pizza, flat colors, thin lines, white background, surreal and humorous vibe.</div>
+            </div>
+             <div class="slide-card white-bg">
+                <div class="sticker-container">
+                    <img src="https://lh3.googleusercontent.com/4FIpqqYuhWBH2rzx6Cu1DlKpHffW3DnRWtJEZj8qFMx-xA83QyDlbFSHbNYev0AtFjxvf488yzBRZUZOJo4zdVrWyOUO5MrAJVhoUZSzUFypVWxBHw=w2880-h1620-n-nu-rw-lo" class="sticker-img">
+                </div>
+                <div class="prompt-box light">Prompt: Die-cut sticker of a serene ‘catloaf’ in Japanese Ukiyo-e style, bold outlines, flat harmonious colors, subtle woodgrain texture, white background, elegant and cozy vibe.</div>
+            </div>
+             <div class="slide-card white-bg">
+                <div class="sticker-container">
+                    <img src="https://lh3.googleusercontent.com/Ei9V-TLl5QHp18mtP1GvDAm2AcSHeTQRriK49xzIsqAuX_KscEpk2cUMwS-YLclF-BTNHnGuEbBGK7OrTkpU2FG5X4sdeBnz4ukNlstkAC0=w2880-h1620-n-nu-rw-lo" class="sticker-img">
+                </div>
+                <div class="prompt-box light">Prompt: Cute cartoon sticker of two happy clouds giving a high-five, soft vector style, subtle shading, bright simple lighting, small starburst effect at contact, transparent background, cheerful and friendly vibe.</div>
+            </div>
+             <div class="slide-card white-bg">
+                <div class="sticker-container">
+                    <img src="https://lh3.googleusercontent.com/KCk0-ozYCTVX_O2NpQUW3R8TXmBf7_AHIDkx6rs253ESHtZGBGSo8FlktAc0ZcF0COJcA6xF3PLnQD-cTAHLBE-a-d0WiHQWNBjtzyUD=w2880-h1620-n-nu-rw-lo" class="sticker-img">
+                </div>
+                <div class="prompt-box light">Prompt: Whimsical sticker of a smiling blue floppy disk melting into colorful goo, thick black outlines, vibrant saturated colors, playful cartoon style, bright cheerful lighting, die-cut fun vibe.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PERFORMANCE -->
+    <section id="performance" class="section-padding scroll-target">
+        <div class="container">
+            <div class="text-block">
+                <h2>Performance</h2>
+                <p class="large-p" style="font-size: 1.5rem; line-height: 1.6; max-width: 900px; color: var(--text-gray);">
+                    BabalVision AI is engineered for high-performance execution with a focus on speed, reliability, and visual fidelity. Every process—from image generation to rendering and transitions—is optimized for low latency and smooth, uninterrupted operation. Intelligent resource management and scalable architecture ensure consistent results across devices, delivering a professional-grade experience that remains fast, stable, and precise at all times.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SAFETY -->
+    <section id="safety" class="section-padding scroll-target">
+        <div class="container">
+            <div class="text-block">
+                <h2>Limitations</h2>
+                <p class="large-p">Creativity is an evolution. BabalVision AI is leading<br>text-to-image — but we're still working on<br>improving key capabilities.</p>
+            </div>
+            
+            <div class="grid-3-text">
+                <div>
+                    <h3>Factual representation</h3>
+                    <p class="desc">Diffusion models don't have the real-world knowledge of LLMs. Artefacts may appear on complicated compositions.</p>
+                </div>
+                <div>
+                    <h3>Centered images</h3>
+                    <p class="desc">Sometimes struggles to create perfectly centered images, like a circle aligned in the center.</p>
+                </div>
+                <div>
+                    <h3>Incomprehensible prompts</h3>
+                    <p class="desc">BabalVision AI responds reliably to text prompts, but when it's given nonsensical prompts, outputs can be unpredictable.</p>
+                </div>
+            </div>
+            
+            <div class="safety-block" style="margin-top: 100px;">
+                 <div class="text-block">
+                    <h2>Safety</h2>
+                </div>
+                 <div class="grid-2-text">
+                    <p class="desc big-desc">We use extensive filtering and data labeling to minimize harmful content in datasets and reduce the likelihood of harmful outputs. We also conduct red teaming.</p>
+                    <div>
+                        <p class="desc big-desc">We're releasing BabalVision AI with our latest privacy, safety and security features. This includes SynthID, our tool that embeds an invisible digital watermark.</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TRY FOOTER -->
+    <section id="try" class="section-padding scroll-target" style="padding-bottom: 120px;">
+        <div class="container">
+            <div class="text-block">
+                <h2>Try Our AI Models</h2>
+            </div>
+            <div class="grid-4">
+                <a href="https://babalvision-ai.balrampathak.com.np/" class="try-card">
+                    <div class="try-icon">
+                        <img src="logo.png" style="width:40px; height:40px; object-fit:contain;" alt="Balram AI Logo">
+                    </div>
+                    <h3>BabalVision AI</h3>
+                    <p>Supercharge your creativity and productivity</p>
+                    <span class="link-blue">Try in BabalVision AI ></span>
+                </a>
+                <a href="https://gen3d.balrampathak.com.np/" class="try-card">
+                   <div class="try-icon">
+                    <img src="https://www.balrampathakofficial.com/web/image/809-2dd6ac86/genn.webp" 
+                    style="width:120px; height:40px; object-fit:cover; border-radius:999px;" 
+                    alt="Balram AI Logo">
+                    </div>
+                    <h3>Try Gen3D AI</h3>
+                    <p>Use images as prompts to visualize your ideas in 3D</p>
+                    <span class="link-blue">Try in Gen3D ></span>
+                </a>
+                <a href="https://ai.balrampathak.com.np/" class="try-card">
+                    <div class="try-icon">
+                    <img src="https://ai.balrampathak.com.np/images/balram-ai.jpeg" 
+                    style="width:40px; height:40px; object-fit:contain; border-radius:50%;" 
+                    alt="Balram AI Logo">
+                    </div>
+                    <h3>Balram AI</h3>
+                    <p>Effortless AI Conversations at the Speed of Thought</p>
+                    <span class="link-blue">Try in Balram AI ></span>
+                </a>
+                <a href="#" class="try-card">
+                    <div class="try-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M10 2v7.31l-2.45 4.9A2 2 0 0 0 9.34 17h5.32a2 2 0 0 0 1.79-2.79L14 9.31V2h-4z"></path></svg>                    </div>
+                    <h3>Balram AI Models API</h3>
+                    <p>Get started building with cutting-edge AI models</p>
+                    <span class="link-blue">On Development!</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">BabalVision AI</div>
+            <div class="socials">
+                <a href="#">X</a>
+                <a href="https://www.balrampathakofficial.com">Our Website</a>
+            </div>
+        </div>
+        <div class="footer-bottom"></div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /* =========================================
+               0. HEADER BRAND CLICK -> SCROLL TOP
+            ========================================= */
+            const brandBtn = document.getElementById('brandBtn');
+            brandBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            /* =========================================
+               1. DATA FOR HERO SLIDES
+            ========================================= */
+            const slidesData = [
+                {
+                    // Slide 1 (Centerpiece)
+                    img: "https://images.pexels.com/photos/751689/pexels-photo-751689.jpeg",
+                    title: "BabalVision AI",
+                    subtitle: "Our leading text-to-image model, engineered for creativity",
+                    buttons: true,
+                    layout: "center",
+                    isGradient: true
+                },
+                {
+                    // Slide 2
+                    img: "https://lh3.googleusercontent.com/hPaX_4lxz5fJ2RlK8bR8xk4uXPoQUxa731K99A0n9zCanfwrQrewsA8VhIxk4d4HF_IxFmrsWJ2TWcLn5IbCUnYmnxaFLBa3E9hW-CSMAA=w2880-h1620-n-nu-rw-lo",
+                    title: "Photo-realistic",
+                    subtitle: "Create realistic images of landscapes, plants, people and animals with true-to-life details.",
+                    linkText: "Try BabalVision AI",
+                    linkUrl: "https://babalvision-ai.balrampathak.com.np/",
+                    layout: "left"
+                },
+                {
+                    // Slide 3
+                    img: "https://lh3.googleusercontent.com/dwfQaGR4JhXUMGdLZXcZrm7qocsl2139IVC64MChfNqkJ2BmUb4-JbdQWX90fPiw4lWLA3ofLI-IvvRyXLuMjl-rH64KYMlr_JnAcxV6sA=w2880-h1620-n-nu-rw-lo",
+                    title: "Fine details",
+                    subtitle: "Capture extreme close-ups with richer colors, textures and gradients.",
+                    linkText: "Try BabalVision AI",
+                    linkUrl: "https://babalvision-ai.balrampathak.com.np/",
+                    layout: "left"
+                },
+                {
+                    // Slide 4
+                    img: "https://lh3.googleusercontent.com/VCJ4Xvd4auREbCfk8mlyWRd8YIzCE93Yc6F_bDZDDXjValcn5D3sPRIWxmxKlFcVXBWcL5UDWCnxaLfuKLci9E3m56OatpMp4h6v1FN1kbzHw5XVtlY=w2880-h1620-n-nu-rw-lo",
+                    title: "Diverse art styles",
+                    subtitle: "Render diverse art styles with greater accuracy — from photo realism to illustration.",
+                    linkText: "Try Balram AI",
+                    linkUrl: "https://ai.balrampathak.com.np/",
+                    layout: "left"
+                },
+                {
+                    // Slide 5
+                    img: "https://lh3.googleusercontent.com/AbiZkz_r2X28wzK-hSTbYsAcDl2zk0lkAZvtpPJBNfHQP8dbTYsmGCNrtPlgiV0ENpZxX38zeqyZn1xQXzT6AMzn-8vCiHPCrIfcGuP-_w=w2880-h1620-n-nu-rw-lo",
+                    title: "Abstract Vision",
+                    subtitle: "Pushing the boundaries of imagination.",
+                    linkText: "Try BabalVision AI",
+                    linkUrl: "https://babalvision-ai.balrampathak.com.np/",
+                    layout: "left"
+                }
+            ];
+
+            /* =========================================
+               2. RENDER SLIDES (Including Clones)
+            ========================================= */
+            const track = document.getElementById('heroTrack');
+            const totalSlides = slidesData.length;
+            const renderOrder = [slidesData[totalSlides-1], ...slidesData, slidesData[0]];
+
+            function generateSlideHTML(data) {
+                let contentHTML = '';
+                // Add class for Gradient Title if specific flag is true
+                const titleClass = data.isGradient ? 'gradient-text' : '';
+                
+                if (data.layout === "center") {
+                    contentHTML = `
+                        <div class="slide-overlay-layout">
+                            <div class="slide-top-content">
+                                <h1 class="${titleClass}">${data.title}</h1>
+                                <p>${data.subtitle}</p>
+                            </div>
+                            <div class="slide-bottom-content">
+                                <a href="https://babalvision-ai.balrampathak.com.np/" class="btn-pill white">Try BabalVision AI</a>
+                                <a href="https://ai.balrampathak.com.np/" class="btn-pill white">Try Balram AI</a>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    contentHTML = `
+                        <div class="slide-overlay-layout">
+                            <div class="slide-top-content left-align">
+                                <h3>${data.title}</h3>
+                                <p>${data.subtitle}</p>
+                            </div>
+                            <div class="slide-bottom-content left-align">
+                                <a href="${data.linkUrl}" class="btn-small glass">${data.linkText}</a>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                return `
+                    <div class="hero-slide">
+                        <img src="${data.img}" alt="${data.title}" draggable="false">
+                        ${contentHTML}
+                    </div>
+                `;
+            }
+
+            track.innerHTML = renderOrder.map(generateSlideHTML).join('');
+
+            /* =========================================
+               3. SLIDER LOGIC (CENTERED)
+            ========================================= */
+            let currentIndex = 1;
+            let isDragging = false;
+            let startPos = 0;
+            let currentTranslate = 0;
+            let prevTranslate = 0;
+            let animationID;
+            
+            const heroContainer = document.querySelector('.hero-container');
+
+            // Calculates the width of a single slide + the gap
+            const slideWidthPlusGap = () => {
+                const slide = track.children[0];
+                // 16px is the gap defined in CSS .hero-track
+                return slide.offsetWidth + 16; 
+            };
+
+            // Calculates the offset needed to center the slide in the view
+            const getCenterOffset = () => {
+                const slide = track.children[0];
+                const containerW = heroContainer.offsetWidth;
+                const slideW = slide.offsetWidth;
+                return (containerW - slideW) / 2;
+            }
+
+            function setPositionByIndex(index, animate = true) {
+                const w = slideWidthPlusGap();
+                // Base offset puts left edge at 0
+                const baseOffset = -(index * w);
+                // Add center alignment
+                const centerOffset = getCenterOffset();
+                
+                const finalOffset = baseOffset + centerOffset;
+
+                currentTranslate = finalOffset;
+                prevTranslate = finalOffset;
+                
+                track.style.transition = animate ? 'transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1)' : 'none';
+                track.style.transform = `translateX(${finalOffset}px)`;
+            }
+
+            window.addEventListener('load', () => setPositionByIndex(currentIndex, false));
+            window.addEventListener('resize', () => setPositionByIndex(currentIndex, false));
+
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            function nextSlide() {
+                if (currentIndex >= renderOrder.length - 1) return;
+                currentIndex++;
+                setPositionByIndex(currentIndex);
+                checkIndex();
+            }
+
+            function prevSlide() {
+                if (currentIndex <= 0) return;
+                currentIndex--;
+                setPositionByIndex(currentIndex);
+                checkIndex();
+            }
+
+            function checkIndex() {
+                track.addEventListener('transitionend', function() {
+                    if (currentIndex === 0) {
+                        currentIndex = totalSlides;
+                        setPositionByIndex(currentIndex, false);
+                    }
+                    if (currentIndex === totalSlides + 1) {
+                        currentIndex = 1;
+                        setPositionByIndex(currentIndex, false);
+                    }
+                }, { once: true });
+            }
+
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+
+            /* --- TOUCHPAD SCROLL SUPPORT (ROBUST FIX) --- */
+            /* --- TOUCHPAD SCROLL SUPPORT (LIVE KINETIC) --- */
+            /* --- TOUCHPAD SCROLL SUPPORT (STRICT 1-SLIDE LOCK) --- */
+            let isProcessingSwipe = false;
+
+            heroContainer.addEventListener('wheel', (e) => {
+                // 1. Check if scrolling is vertical (allow normal page scrolling)
+                if (Math.abs(e.deltaX) < Math.abs(e.deltaY)) return;
+                
+                // 2. Prevent browser back/forward history navigation
+                e.preventDefault();
+
+                // 3. STRICT LOCK: If we are currently moving, IGNORE everything.
+                // This ensures that no matter how fast you swipe, it only counts as ONE action.
+                if (isProcessingSwipe) return;
+
+                // 4. Threshold Trigger
+                // We use 30 to avoid tiny accidental movements.
+                if (e.deltaX > 30) {
+                    performSingleSlide('next');
+                } else if (e.deltaX < -30) {
+                    performSingleSlide('prev');
+                }
+            }, { passive: false });
+
+            function performSingleSlide(direction) {
+                // Lock immediately so momentum is ignored
+                isProcessingSwipe = true;
+
+                if (direction === 'next') {
+                    if (currentIndex < renderOrder.length - 1) {
+                        currentIndex++;
+                        setPositionByIndex(currentIndex);
+                    }
+                } else {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        setPositionByIndex(currentIndex);
+                    }
+                }
+
+                // UNLOCK TIMER:
+                // The CSS animation takes 600ms. 
+                // We set this to 900ms. The extra 300ms acts as a "cool down"
+                // to let the fast swipe momentum die out completely before accepting a new slide.
+                setTimeout(() => {
+                    isProcessingSwipe = false;
+                    checkIndex();
+                }, 900);
+            }
+
+            
+
+            /* --- DRAG / TOUCH EVENTS --- */
+            track.addEventListener('touchstart', touchStart);
+            track.addEventListener('touchend', touchEnd);
+            track.addEventListener('touchmove', touchMove);
+            track.addEventListener('mousedown', touchStart);
+            track.addEventListener('mouseup', touchEnd);
+            track.addEventListener('mouseleave', () => { if(isDragging) touchEnd() });
+            track.addEventListener('mousemove', touchMove);
+
+            function touchStart(event) {
+                isDragging = true;
+                startPos = getPositionX(event);
+                animationID = requestAnimationFrame(animation);
+                track.style.cursor = 'grabbing';
+                track.style.transition = 'none';
+            }
+
+            function touchMove(event) {
+                if (isDragging) {
+                    const currentPosition = getPositionX(event);
+                    const diff = currentPosition - startPos;
+                    currentTranslate = prevTranslate + diff;
+                }
+            }
+
+            function touchEnd() {
+                isDragging = false;
+                cancelAnimationFrame(animationID);
+                track.style.cursor = 'grab';
+                const movedBy = currentTranslate - prevTranslate;
+                const threshold = 100;
+                if (movedBy < -threshold) currentIndex++;
+                else if (movedBy > threshold) currentIndex--;
+                setPositionByIndex(currentIndex);
+                checkIndex();
+            }
+
+            function getPositionX(event) {
+                return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+            }
+
+            function animation() {
+                if (isDragging) {
+                    track.style.transform = `translateX(${currentTranslate}px)`;
+                    requestAnimationFrame(animation);
+                }
+            }
+
+            /* =========================================
+               4. STICKY NAV ANIMATION
+            ========================================= */
+            const navTrack = document.querySelector('.nav-track');
+            const backdrop = document.querySelector('.nav-backdrop');
+            const navItems = document.querySelectorAll('.nav-item');
+            const sections = document.querySelectorAll('.scroll-target');
+            const headerOffset = 150; 
+            let isClicking = false;
+
+            function moveBackdrop(activeItem) {
+                if(!activeItem) return;
+                const trackRect = navTrack.getBoundingClientRect();
+                const itemRect = activeItem.getBoundingClientRect();
+                const left = itemRect.left - trackRect.left;
+                const width = itemRect.width;
+                backdrop.style.transform = `translateX(${left}px)`;
+                backdrop.style.width = `${width}px`;
+                navItems.forEach(item => item.classList.remove('active'));
+                activeItem.classList.add('active');
+            }
+
+            navItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    isClicking = true;
+                    const targetId = item.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if(targetSection) {
+                        const elementPosition = targetSection.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                    }
+                    moveBackdrop(e.target);
+                    setTimeout(() => { isClicking = false; }, 1000);
+                });
+            });
+
+            const observer = new IntersectionObserver((entries) => {
+                if(isClicking) return;
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        const activeLink = document.querySelector(`.nav-item[href="#${id}"]`);
+                        if(activeLink) moveBackdrop(activeLink);
+                    }
+                });
+            }, { root: null, rootMargin: '-40% 0px -60% 0px', threshold: 0 });
+
+            sections.forEach(section => observer.observe(section));
+            setTimeout(() => moveBackdrop(document.querySelector('.nav-item.active')), 100);
+        });
+    </script>
+</body>
+</html>
